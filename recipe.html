@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toge Tales</title>
+    <link rel="stylesheet" href="recipe.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="home.html"><img src="logo-nav.jpg" alt="Toge Tales Logo"></a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    <section>
+        <div class="anime-panel">
+            <!-- Extreme anime speed lines -->
+            <div class="anime-speedlines-------"></div>
+
+            <!-- Ink splatter / broken edges -->
+            <div class="ink-splatter ink-top-left"></div>
+            <div class="ink-splatter ink-top-right"></div>
+            <div class="ink-splatter ink-bottom-left"></div>
+            <div class="ink-splatter ink-bottom-right"></div>
+
+            <div class="anime-content">
+                <h1 class="font-change">COOKING RECIPES</h1>
+                <p>料理レシピ</p>
+            </div>
+
+            <div>
+                <ul class="category">
+                    <li><button onclick="window.location.href='spicy.html'">Spicy Lumpiang Toge</button></li>
+                    <li><button onclick="window.location.href='healthy.html'">Healthy Lumpiang Toge</button></li>
+                    <li><button onclick="window.location.href='cheesy.html'">Cheesy Lumpiang Toge</button></li>
+                </ul>
+                <h2 class="animi">CLASSIC LUMPIANG TOGE</h2>
+            </div>  
+
+            <div class="recipe-container">
+                <div class="recipe-right">
+                    
+                    <h3>HISTORY</h3>
+                        <p class="recipe-p">Lumpiang toge, also known as <strong>mung bean 
+                            sprout spring roll</strong>, is a traditional Filipino snack that 
+                            traces its roots to Chinese spring rolls introduced to the 
+                            Philippines by early Chinese immigrants. Unlike the more elaborate
+                            meat or seafood-filled lumpia, classic lumpiang toge focuses on 
+                            simplicity and freshness, using mung bean sprouts, garlic, 
+                            carrots, and sometimes shrimp or pork lightly sautéed 
+                            and wrapped in a thin spring roll wrapper.
+                        </p>
+                        <p class="recipe-p">It became popular in the 20th century as an affordable, healthy, and 
+                            easy-to-make snack or appetizer, often served with a garlic-
+                            vinegar or sweet sauce. Today, it’s cherished for its crunchy 
+                            texture, light flavor, and versatility, embodying the Filipino 
+                            adaptation of a Chinese culinary tradition.
+                        </p> 
+                </div>
+
+                <div class="recipe-left">
+                    
+                    <br><br>
+                    <img src="classic-lumpia-colored.png" alt="Lumpia" class="recipe-image">
+                    <p>“The OG hero of street-food battles — Classic Lumpiang Toge! Crispy on the outside, veggie power on the inside, delivering that ultimate crunch attack every bite.”</p>
+                    <br><br>
+                </div>
+
+                <div class="recipe-right">
+                    <br>
+                    <h3>INGREDIENTS</h3>
+                    <br><br>
+                    <ul>
+                        <li>1 lb ground pork</li>
+                        <li>1 cup shredded carrots</li>
+                        <li>1 cup cabbage, chopped</li>
+                        <li>2 cloves garlic, minced</li>
+                        <li>1/4 cup soy sauce</li>
+                        <li>Spring roll wrappers</li>
+                        <li>Oil for frying</li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="procedure">
+                    <h3>PROCEDURE</h3>
+                    <img src="procedureRoll.gif" alt="">
+                    <p>1. Mix all ingredients together in a bowl.</p>
+                    <p>2. Place a spoonful of the mixture in a wrapper and roll it up.</p>
+                    <p>3. Heat oil in a pan and fry the lumpia until golden brown.</p>
+                    <p>4. Serve hot and enjoy!</p>
+                </div>
+        </div>
+    </section>
+    <section id="youtube" style="margin-top: 0px;"class="div-yt">
+        <div style="text-align:center;" >
+            <h1>Watch & Cook</h1>
+            <input id="searchInput" type="text" placeholder="Search YouTube..."
+                style="padding: 10px; width:250px;">
+            <button onclick="searchVideos()" style="padding:10px;">Search</button>
+        </div>
+
+        <div id="videoResults"
+            style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; width:70%; padding-top: 90px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lumpiang Toge </p>
+    </footer>
+    <script src="youtube.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toge Tales</title>
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="home.html"><img src="logo-nav.jpg" alt="Toge Tales Logo"></a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <section class="manga-panel">
+            <h1>ABOUT</h1>
+
+            <p class="subtitle">A quiet page between the panels</p>
+
+            <p>
+            This website was born from a simple idea — to tell a story without shouting.
+            Like a manga panel frozen in time, every detail is intentional.
+            </p>
+
+            <p>
+            Here, we focus on <span class="emphasis">craft, emotion, and atmosphere</span>.
+            Not everything needs to be explained. Some things are meant to be felt
+            between the lines.
+            </p>
+
+            <p>
+            What you see is not just content, but a reflection of patience,
+            passion, and the beauty of still moments.
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="closing">
+            Thank you for turning this page.
+            </p>
+        </section>
+
+</body>
+</html>
+
+    <section id="youtube" style="margin-top: 0px;"class="div-yt">
+        <div style="text-align:center;" >
+            <h1>Watch & Cook</h1>
+            <input id="searchInput" type="text" placeholder="Search YouTube..."
+                style="padding: 10px; width:250px;">
+            <button onclick="searchVideos()" style="padding:10px;">Search</button>
+        </div>
+
+        <div id="videoResults"
+            style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; width:70%; padding-top: 90px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lumpiang Toge </p>
+    </footer>
+    <script src="youtube.js"></script>
+</body>
+</html>

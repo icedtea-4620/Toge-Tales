@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toge Tales</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="home.html"><img src="logo-nav.jpg" alt="Toge Tales Logo"></a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+            <div class="nav-slogan">
+                <p>FLAVOR ADVENTURE!</p>
+            </div>
+    </section>
+    
+    <section>
+        <div class="intro" style="font-weight: 900;">
+            <h1 class="hover-swap"><strong>味わいの冒険</strong></h1>
+        </div>
+    </section>
+
+    <section class="div-gallery1" id="gallery">
+        <div class="manga-box">
+            <div class="left-img">
+    <div class="anime-hover">
+        <img src="classic-lumpia-colored.png" class="main-img">
+        <img src="effect.png" class="kaboom">
+    </div>
+</div>
+
+
+            <div class="right-text">
+                <br>
+                <h1>CLASSIC LUMPIANG TOGE</h1>
+                <p style="font-size: 16px; font-style: italic;">
+                    “Behold! The legendary Lumpiang Toge—crispy armor outside, veggie strength inside!”
+                </p>
+
+                <br><br>
+
+                <p>
+                    Crispy on the outside, crunchy on the inside! A Filipino favorite packed with tender bean sprouts, colorful veggies, and savory seasonings.
+                </p>
+
+                <br><br>
+
+                <button onclick="window.location.href='recipe.html'">Click to know more!</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery-cards">
+        <h2>MORE TOGE CREATIONS</h2>
+
+        <br><br><br><br>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="spicy-colored.png" alt="Spicy Lumpiang Toge">
+                <h3>Spicy Lumpiang Toge</h3>
+                <p>A fiery twist with chili heat wrapped in the classic crunch.</p>
+                <button onclick="window.location.href='spicy.html'">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <img src="healthy-colored.png" alt="Healthy Lumpiang Toge">
+                <h3>Healthy / Low-Oil Toge</h3>
+                <p>Light, fresh, and guilt-free while keeping full flavor.</p>
+                <button onclick="window.location.href='healthy.html'">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <img src="cheesy-colored.png" alt="Cheesy Lumpiang Toge">
+                <h3>Cheesy Lumpiang Toge</h3>
+                <p>Crispy toge lumpia with gooey melted cheese.</p>
+                <button onclick="window.location.href='cheesy.html'">View Recipe</button>
+            </div>
+        </div>
+    </section>
+        <section id="youtube" style="margin-top: 0px;"class="div-yt">
+        <div style="text-align:center;" >
+            <h1>Watch & Cook</h1>
+            <input id="searchInput" type="text" placeholder="Search YouTube..."
+                   style="padding: 10px; width:250px;">
+            <button onclick="searchVideos()" style="padding:10px;">Search</button>
+        </div>
+
+        <div id="videoResults"
+             style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; width:70%; padding-top: 90px;">
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Lumpiang Toge </p>
+    </footer>
+    <script src="youtube.js"></script>
+</body>
+</html>
