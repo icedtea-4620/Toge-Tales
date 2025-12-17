@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toge Tales</title>
+    <link rel="stylesheet" href="spicy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="home.html"><img src="logo-nav.jpg" alt="Toge Tales Logo"></a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    <section>
+        <div class="anime-panel">
+            <!-- Extreme anime speed lines -->
+            <div class="anime-speedlines-------"></div>
+
+            <!-- Ink splatter / broken edges -->
+            <div class="ink-splatter ink-top-left"></div>
+            <div class="ink-splatter ink-top-right"></div>
+            <div class="ink-splatter ink-bottom-left"></div>
+            <div class="ink-splatter ink-bottom-right"></div>
+
+            <div class="anime-content">
+                <h1><span style="color: rgba(201, 33, 0, 0.873);margin-bottom: 0%;">SPICY </span>LUMPIANG </h1>
+                <h1 style="margin-top: 0%;margin-bottom: 20px;">TOGE</h1>
+            </div>
+
+            <div>
+                <ul class="category">                    
+                    <li><button onclick="window.location.href='recipe.html'">Classic Lumpiang Toge</button></li>
+                    <li><button onclick="window.location.href='healthy.html'">Healthy Lumpiang Toge</button></li>
+                    <li><button onclick="window.location.href='recipe.html'">Cheesy Lumpiang Toge</button></li>
+                </ul>
+            </div>  
+
+            <div class="recipe-container">
+                <div class="recipe-right">
+                    
+                    <h3 style="margin-bottom: 1;">BEHIND THE</h3> 
+                    <h3>FLAVOR</h3>
+                        <p class="recipe-p">Spicy Lumpiang Toge is a modern twist on the 
+                            classic Filipino spring roll, inspired by the original 
+                            Chinese-style lumpia introduced to the Philippines. As 
+                            Filipinos adapted the dish, chili and bold spices were added 
+                            to give it a hotter, more exciting flavor. This fusion of 
+                            Chinese roots and Filipino love for spicy food created a crunchy, 
+                            fiery version that’s now a favorite street-food upgrade.
+                        </p>
+                </div>
+
+                <div class="recipe-left">
+
+                    <br><br>
+                    <img src="spicy-procedure.png" alt="Spicy Lumpia" class="recipe-image">
+                    <p>“The fiery challenger of street-food battles — Spicy Lumpiang Toge! 
+                        Crispy armor outside, chili-charged veggie power inside, unleashing a 
+                        bold crunch attack with every bite.”</p>
+                    <br><br>
+                </div>
+
+                <div class="recipe-right">
+                    <h3>INGREDIENTS</h3>
+                    <ul>
+                        <li>2 cups toge (mung bean sprouts)</li>
+                        <li>1 small carrot, julienned</li>
+                        <li>1 small onion, sliced</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>2 pcs siling labuyo, chopped (adjust to taste)</li>
+                        <li>1 tbsp chili garlic oil</li>
+                        <li>Oil for frying</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>Salt & pepper to taste</li>
+                        <li>Spring roll wrappers</li>
+                        <li>Oil for frying</li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="procedure">
+                    <h3>PROCEDURE</h3>
+                    <img src="springrolls.gif" alt="">
+                    <p>1. Sauté garlic, onion, and siling labuyo until fragrant.</p>
+                    <p>2. Add the carrots and cook for 1–2 minutes.</p>
+                    <p>3. Add the toge, soy sauce, chili garlic oil, salt, and pepper.</p> 
+                    <p>Mix and cook briefly.</p>
+                    <p>4. Turn off heat and let the filling cool.</p>
+                    <p>5. Spoon the mixture onto wrappers and roll into lumpia.</p>
+                    <p>6. Heat oil and fry until golden and crispy.</p>
+                    <p>7. Serve with spicy vinegar dipping sauce.</p>
+                </div>
+        </div>
+    </section>
+    <section id="youtube" style="margin-top: 0px;"class="div-yt">
+        <div style="text-align:center;" >
+            <h1>Watch & Cook</h1>
+            <input id="searchInput" type="text" placeholder="Search YouTube..."
+                style="padding: 10px; width:250px;">
+            <button onclick="searchVideos()" style="padding:10px;">Search</button>
+        </div>
+
+        <div id="videoResults"
+            style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; width:70%; padding-top: 90px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lumpiang Toge </p>
+    </footer>
+    <script src="youtube.js"></script>
+</body>
+</html>
