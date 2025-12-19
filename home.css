@@ -566,14 +566,17 @@ button:hover {
     color: transparent;
 }
 
-/* New text that appears */
 .hover-swap:hover::after {
     content: "FLAVOR ADVENTURE";
+    content-visibility:visible;
     position: absolute;
     font-family: 'Montserrat';
-    top: 1;
+    font-weight: 900;
+    letter-spacing: -15px;
     left: 0;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.804);
+    text-shadow: 5px 0 0 #000000 solid,
+    10px 0 0 #000000 solid;
 }
+
 
